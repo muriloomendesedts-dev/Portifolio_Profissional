@@ -37,49 +37,56 @@ const projects = [
     title: 'Distribuidora de Refrigerantes',
     desc: 'Catálogo de produtos e sistema web para gestão de pedidos de uma distribuidora de bebidas.',
     tag: 'Indústria',
-    lang: 'CSS / JS'
+    lang: 'CSS / JS',
+    image: 'images/projeto-refrigerantes.png',
+    live: 'https://muriloomendesedts-dev.github.io/projeto-refrigerantes/'
   },
   {
     name: 'devcafe',
     title: 'DevCafé',
     desc: 'Site institucional e cardápio digital para uma cafeteria, com navegação responsiva.',
     tag: 'Pequenos negócios',
-    lang: 'CSS / JS'
+    lang: 'CSS / JS',
+    image: 'images/devcafe.png',
+    live: 'https://muriloomendesedts-dev.github.io/devcafe/'
   },
   {
     name: 'salao-portifolio',
     title: 'Salão de Beleza',
     desc: 'Site institucional para salão de beleza com apresentação de serviços e contato direto.',
     tag: 'Clínicas & Estética',
-    lang: 'CSS / JS'
-  },
-  {
-    name: 'loja',
-    title: 'Loja Virtual',
-    desc: 'Base de sistema de loja virtual, estruturada em Python para gestão de produtos.',
-    tag: 'E-commerce',
-    lang: 'Python'
+    lang: 'CSS / JS',
+    image: 'images/salao-portifolio.png',
+    live: 'https://muriloomendesedts-dev.github.io/salao-portifolio/'
   },
   {
     name: 'Projeto-2-tradutor',
     title: 'Tradutor Web',
     desc: 'Aplicação web para tradução de textos, com integração de API e interface simples.',
     tag: 'Ferramenta',
-    lang: 'JavaScript'
+    lang: 'JavaScript',
+    image: 'images/projeto-2-tradutor.png',
+    live: 'https://muriloomendesedts-dev.github.io/Projeto-2-tradutor/',
+    focus: 'center'
   }
 ];
 
 const projectsEl = document.getElementById('projects');
 projectsEl.innerHTML = projects.map((p, i) => `
   <article class="project-card reveal" style="transition-delay:${i * 60}ms">
-    <div class="project-card__top">
-      <h3>${p.title}</h3>
-      <span class="tag">${p.tag}</span>
-    </div>
-    <p>${p.desc}</p>
-    <div class="project-card__footer">
-      <span>${p.lang}</span>
-      <a href="https://github.com/muriloomendesedts-dev/${p.name}" target="_blank" rel="noopener">Ver no GitHub →</a>
+    <a class="project-card__image" href="${p.live}" target="_blank" rel="noopener">
+      <img src="${p.image}" alt="Captura de tela do site ${p.title}" loading="lazy" style="object-position:${p.focus || 'top center'}">
+    </a>
+    <div class="project-card__body">
+      <div class="project-card__top">
+        <h3>${p.title}</h3>
+        <span class="tag">${p.tag}</span>
+      </div>
+      <p>${p.desc}</p>
+      <div class="project-card__footer">
+        <span>${p.lang}</span>
+        <a href="https://github.com/muriloomendesedts-dev/${p.name}" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </div>
     </div>
   </article>
 `).join('');
