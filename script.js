@@ -68,6 +68,42 @@ const projects = [
     image: 'images/projeto-2-tradutor.png',
     live: 'https://muriloomendesedts-dev.github.io/Projeto-2-tradutor/',
     focus: 'center'
+  },
+  {
+    name: 'academia',
+    title: 'Elite Fitness',
+    desc: 'Site institucional para academia, com planos, modalidades e agendamento de aula experimental.',
+    tag: 'Academia & Fitness',
+    lang: 'HTML / CSS / JS',
+    image: 'images/academia.png',
+    live: 'https://muriloomendesedts-dev.github.io/academia/'
+  },
+  {
+    name: 'advocacia',
+    title: 'Oliveira & Associados',
+    desc: 'Site institucional para escritório de advocacia, com áreas de atuação e captação de consultas.',
+    tag: 'Advocacia',
+    lang: 'HTML / CSS / JS',
+    image: 'images/advocacia.png',
+    live: 'https://muriloomendesedts-dev.github.io/advocacia/'
+  },
+  {
+    name: 'clinica-medica',
+    title: 'Dra. Camila Nutri',
+    desc: 'Site para consultório de nutrição, com apresentação de resultados e agendamento de consulta.',
+    tag: 'Clínicas & Nutrição',
+    lang: 'HTML / CSS / JS',
+    image: 'images/clinica-medica.png',
+    live: 'https://muriloomendesedts-dev.github.io/clinica-medica/'
+  },
+  {
+    name: 'infoprodutor',
+    title: 'Lucas Ferreira - Mentor Digital',
+    desc: 'Página de vendas para infoprodutor, com prova social, serviços e captação de leads.',
+    tag: 'Infoprodutos',
+    lang: 'HTML / CSS / JS',
+    image: 'images/infoprodutor.png',
+    live: 'https://muriloomendesedts-dev.github.io/infoprodutor/'
   }
 ];
 
