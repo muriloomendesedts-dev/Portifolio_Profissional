@@ -112,6 +112,10 @@ projectsEl.innerHTML = projects.map((p, i) => `
   <article class="project-card reveal" style="transition-delay:${i * 60}ms">
     <a class="project-card__image" href="${p.live}" target="_blank" rel="noopener">
       <img src="${p.image}" alt="Captura de tela do site ${p.title}" loading="lazy" style="object-position:${p.focus || 'top center'}">
+      <span class="project-card__badge">Visitar site ↗</span>
+      <span class="project-card__overlay">
+        <span class="project-card__overlay-btn">Ver site ao vivo ↗</span>
+      </span>
     </a>
     <div class="project-card__body">
       <div class="project-card__top">
