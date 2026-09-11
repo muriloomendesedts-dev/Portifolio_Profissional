@@ -1,12 +1,6 @@
 // ano no rodapé
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// nav: sombra ao rolar
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 10);
-});
-
 // menu mobile
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
@@ -19,7 +13,6 @@ navLinks.querySelectorAll('a').forEach(link => {
 });
 
 // animação de entrada ao rolar
-const revealEls = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -28,9 +21,9 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.15 });
-revealEls.forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-// projetos em destaque
+// projetos executados
 const projects = [
   {
     name: 'projeto-refrigerantes',
@@ -109,27 +102,21 @@ const projects = [
 
 const projectsEl = document.getElementById('projects');
 projectsEl.innerHTML = projects.map((p, i) => `
-  <article class="project-card reveal" style="transition-delay:${i * 60}ms">
-    <a class="project-card__image" href="${p.live}" target="_blank" rel="noopener">
+  <article class="reveal proj" style="transition-delay:${i * 60}ms">
+    <a class="proj__img-wrap" href="${p.live}" target="_blank" rel="noopener">
       <img src="${p.image}" alt="Captura de tela do site ${p.title}" loading="lazy" style="object-position:${p.focus || 'top center'}">
-      <span class="project-card__badge">Visitar site ↗</span>
-      <span class="project-card__overlay">
-        <span class="project-card__overlay-btn">Ver site ao vivo ↗</span>
-      </span>
+      <span class="proj__num">${String(i + 1).padStart(2, '0')}</span>
+      <span class="proj__open">Abrir site →</span>
     </a>
-    <div class="project-card__body">
-      <div class="project-card__top">
-        <h3>${p.title}</h3>
-        <span class="tag">${p.tag}</span>
-      </div>
+    <div class="proj__body">
+      <h3>${p.title}</h3>
       <p>${p.desc}</p>
-      <div class="project-card__footer">
-        <span>${p.lang}</span>
-        <a href="https://github.com/muriloomendesedts-dev/${p.name}" target="_blank" rel="noopener">Ver no GitHub →</a>
+      <div class="proj__footer">
+        <span>${p.tag}</span>
+        <a href="https://github.com/muriloomendesedts-dev/${p.name}" target="_blank" rel="noopener">Repo →</a>
       </div>
     </div>
   </article>
 `).join('');
 
-// re-observa os cards de projeto recém-criados
 projectsEl.querySelectorAll('.reveal').forEach(el => observer.observe(el));

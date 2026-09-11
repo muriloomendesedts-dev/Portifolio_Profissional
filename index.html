@@ -7,16 +7,13 @@
 <meta name="description" content="Murilo Mendes de Oliveira — Desenvolvedor Full Stack focado em automações e sistemas web para e-commerce, clínicas, indústria, restaurantes, salões e escritórios de advocacia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="bg-glow bg-glow--one" aria-hidden="true"></div>
-<div class="bg-glow bg-glow--two" aria-hidden="true"></div>
-
 <header class="nav" id="nav">
-  <div class="nav__inner container">
+  <div class="container nav__inner">
     <a href="#top" class="nav__brand">Murilo<span>.dev</span></a>
     <nav class="nav__links" id="navLinks">
       <a href="#sobre">Sobre</a>
@@ -26,7 +23,7 @@
       <a href="#agencias">Agências</a>
       <a href="#contato">Contato</a>
     </nav>
-    <a href="#contato" class="btn btn--primary btn--sm nav__cta">Fale comigo</a>
+    <a href="#contato" class="nav__cta">Orçamento</a>
     <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -36,171 +33,115 @@
 <main id="top">
 
   <section class="hero container">
-    <img class="reveal hero__avatar" src="https://avatars.githubusercontent.com/u/253207551?v=4" alt="Foto de Murilo Mendes de Oliveira" width="112" height="112" loading="eager">
-    <p class="reveal eyebrow">Desenvolvimento web sob medida</p>
-    <h1 class="reveal hero__title">
-      Sistemas e automações que fazem sua empresa <span class="text-gradient">vender e atender melhor</span>
-    </h1>
-    <p class="reveal hero__subtitle">
-      Sou <strong>Murilo Mendes de Oliveira</strong>, desenvolvedor Full Stack. Crio lojas virtuais,
-      sistemas de agendamento e painéis de automação para pequenos negócios dos mais diversos
-      segmentos — do zero, sem complicação.
-    </p>
-    <div class="reveal hero__actions">
-      <a href="https://wa.me/5583981759803" target="_blank" rel="noopener" class="btn btn--primary">
-        <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M17.6 6.3A8.7 8.7 0 0 0 4 16.9L3 21l4.2-1.1A8.7 8.7 0 1 0 17.6 6.3Z" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 8.9c.2-.5.6-.5.9-.5h.6c.2 0 .4 0 .6.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.2-.1.3 0 .5.4.7 1.5 1.9 2.9 2.5.2.1.4.1.5-.1l.5-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.2.3.4 0 1.1-1.1 1.9-2.1 1.9-2.5 0-5.6-2.2-6.6-5.3-.2-.6-.2-1.9.6-2.7Z" fill="currentColor"/></svg>
-        Chamar no WhatsApp
-      </a>
-      <a href="#projetos" class="btn btn--ghost">Ver projetos</a>
-    </div>
-    <div class="reveal hero__tags">
-      <span>E-commerce</span>
-      <span>Clínicas</span>
-      <span>Indústria</span>
-      <span>Restaurantes</span>
-      <span>Salões &amp; Estética</span>
-      <span>Advocacia</span>
+    <div class="hero__grid">
+      <div>
+        <span class="reveal hero__eyebrow">PRANCHA 01 / 06 — APRESENTAÇÃO</span>
+        <h1 class="reveal">Sistema web <em>sob medida</em> pra sua empresa vender mais</h1>
+        <p class="reveal">Construo landing pages, sistemas de agendamento e automações com n8n para pequenos negócios — do briefing à entrega, como um projeto técnico bem especificado.</p>
+        <div class="reveal hero__actions">
+          <a href="https://wa.me/5583981759803" target="_blank" rel="noopener" class="btn btn--fill">Solicitar orçamento →</a>
+          <a href="#projetos" class="btn btn--line">Ver projetos executados</a>
+        </div>
+        <div class="reveal tags">
+          <span>E-commerce</span><span>Clínicas</span><span>Indústria</span><span>Restaurantes</span><span>Salões</span><span>Advocacia</span>
+        </div>
+      </div>
+      <div class="reveal spec">
+        <div class="hero__avatar-wrap">
+          <img class="hero__avatar" src="https://avatars.githubusercontent.com/u/253207551?v=4" alt="Murilo Mendes de Oliveira">
+          <div>
+            <div class="hero__avatar-name">Murilo Mendes de Oliveira</div>
+            <div class="hero__avatar-role">Responsável técnico</div>
+          </div>
+        </div>
+        <div class="spec__head">Ficha técnica do serviço</div>
+        <dl class="spec__rows">
+          <div class="spec__row"><dt>Escopo</dt><dd>LP + automação</dd></div>
+          <div class="spec__row"><dt>Automação</dt><dd>n8n</dd></div>
+          <div class="spec__row"><dt>Entrega média</dt><dd>3–7 dias</dd></div>
+          <div class="spec__row"><dt>Revisões</dt><dd>Inclusas</dd></div>
+          <div class="spec__row"><dt>Orçamento</dt><dd>Sob consulta</dd></div>
+        </dl>
+      </div>
     </div>
   </section>
 
-  <section id="sobre" class="section container">
-    <p class="reveal eyebrow">Sobre</p>
-    <h2 class="reveal section__title">Automatizo processos, você foca no que importa</h2>
+  <section id="sobre" class="container">
+    <div class="title-block">
+      <div>
+        <span class="reveal title-block__sheet">PRANCHA 02 / 06</span>
+        <h2 class="reveal">Sobre o processo</h2>
+      </div>
+      <div class="reveal title-block__meta">DESENHISTA: M. MENDES<br>ESCALA: 1:1</div>
+    </div>
     <div class="about">
-      <p class="reveal about__text">
-        Trabalho com desenvolvimento web focado em resultado: sites, sistemas e automações que resolvem
-        problemas reais de pequenas empresas — desde controle de pedidos até agendamento de clientes e
-        integração de processos internos. Cada projeto é construído sob medida, com código limpo e
-        pensado para crescer junto com o seu negócio.
-      </p>
-      <div class="about__cards">
-        <div class="reveal card card--stat">
-          <strong>Full Stack</strong>
-          <span>Front-end, back-end e banco de dados na mesma mão</span>
-        </div>
-        <div class="reveal card card--stat">
-          <strong>Automação</strong>
-          <span>Menos trabalho manual, menos erro, mais tempo livre</span>
-        </div>
-        <div class="reveal card card--stat">
-          <strong>Sob medida</strong>
-          <span>Sistemas pensados para o seu tipo de negócio</span>
-        </div>
+      <p class="reveal">Trabalho com desenvolvimento web focado em resultado: sites, sistemas e automações que resolvem problemas reais de pequenas empresas — do controle de pedidos ao agendamento de clientes, com integração de processos internos. Cada projeto é levantado, especificado e construído sob medida.</p>
+      <div class="about__specs">
+        <div class="reveal about__spec"><span class="num">01</span><div><strong>Full Stack</strong><span>Front-end, back-end e banco de dados na mesma mão</span></div></div>
+        <div class="reveal about__spec"><span class="num">02</span><div><strong>Automação</strong><span>Menos trabalho manual, menos erro, mais tempo livre</span></div></div>
+        <div class="reveal about__spec"><span class="num">03</span><div><strong>Sob medida</strong><span>Sistemas pensados para o seu tipo de negócio</span></div></div>
       </div>
     </div>
   </section>
 
-  <section id="servicos" class="section container">
-    <p class="reveal eyebrow">Serviços</p>
-    <h2 class="reveal section__title">Soluções pensadas para o seu segmento</h2>
-    <div class="services">
-      <article class="reveal service-card">
-        <h3>E-commerce</h3>
-        <p>Lojas virtuais sob medida, integração de pagamentos, catálogo de produtos e automação de pedidos e estoque.</p>
-      </article>
-      <article class="reveal service-card">
-        <h3>Clínicas</h3>
-        <p>Sistemas de agendamento online, lembretes automáticos de consulta e organização de atendimento ao paciente.</p>
-      </article>
-      <article class="reveal service-card">
-        <h3>Indústria</h3>
-        <p>Painéis de controle de produção e estoque, automação de processos internos e integração entre sistemas.</p>
-      </article>
-      <article class="reveal service-card">
-        <h3>Restaurantes</h3>
-        <p>Cardápio digital, pedidos online e integração com delivery para agilizar o atendimento do salão.</p>
-      </article>
-      <article class="reveal service-card">
-        <h3>Salões &amp; Estética</h3>
-        <p>Agendamento online, ficha de cliente e lembretes automáticos para reduzir faltas e otimizar a agenda.</p>
-      </article>
-      <article class="reveal service-card">
-        <h3>Advocacia &amp; Serviços</h3>
-        <p>Gestão de processos e clientes, captação de leads e automação de tarefas repetitivas do escritório.</p>
-      </article>
+  <section id="servicos" class="container">
+    <div class="title-block">
+      <div><span class="reveal title-block__sheet">PRANCHA 03 / 06</span><h2 class="reveal">Especificação por segmento</h2></div>
+      <div class="reveal title-block__meta">6 FIGURAS<br>REV. 03</div>
+    </div>
+    <div class="fig-grid">
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. 01 — E-COMMERCE</span><h3>Lojas virtuais</h3><p>Catálogo, pagamento e automação de pedidos e estoque.</p></div>
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. 02 — CLÍNICAS</span><h3>Agendamento</h3><p>Marcação online, lembretes automáticos e organização de atendimento.</p></div>
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. 03 — INDÚSTRIA</span><h3>Controle interno</h3><p>Painéis de produção e estoque, integração entre sistemas.</p></div>
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. 04 — RESTAURANTES</span><h3>Cardápio digital</h3><p>Pedidos online e integração com delivery.</p></div>
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. 05 — SALÕES</span><h3>Agenda &amp; ficha</h3><p>Ficha de cliente e lembretes para reduzir faltas.</p></div>
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. 06 — ADVOCACIA</span><h3>Captação</h3><p>Gestão de processos, clientes e automação de tarefas.</p></div>
     </div>
   </section>
 
-  <section id="stack" class="section container">
-    <p class="reveal eyebrow">Tecnologias</p>
-    <h2 class="reveal section__title">Stack principal</h2>
-    <div class="stack reveal">
-      <span class="pill"><i class="dot" style="--c:#e34f26"></i>HTML5</span>
-      <span class="pill"><i class="dot" style="--c:#264de4"></i>CSS3</span>
-      <span class="pill"><i class="dot" style="--c:#f7df1e"></i>JavaScript</span>
-      <span class="pill"><i class="dot" style="--c:#ea4b71"></i>n8n</span>
+  <section id="stack" class="container">
+    <div class="title-block"><div><span class="reveal title-block__sheet">PRANCHA 04 / 06</span><h2 class="reveal">Legenda de materiais</h2></div></div>
+    <div class="reveal legend">
+      <div class="legend__item"><span class="legend__swatch" style="background:#e34f26"></span><span>HTML5</span></div>
+      <div class="legend__item"><span class="legend__swatch" style="background:#264de4"></span><span>CSS3</span></div>
+      <div class="legend__item"><span class="legend__swatch" style="background:#f7df1e"></span><span>JavaScript</span></div>
+      <div class="legend__item"><span class="legend__swatch" style="background:#ea4b71"></span><span>n8n</span></div>
     </div>
   </section>
 
-  <section id="projetos" class="section container">
-    <p class="reveal eyebrow">Portfólio</p>
-    <h2 class="reveal section__title">Projetos recentes</h2>
-    <div class="projects" id="projects">
-      <!-- populated by script.js -->
-    </div>
-    <p class="reveal projects__more">
-      <a href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener">Ver todos os repositórios no GitHub →</a>
-    </p>
+  <section id="projetos" class="container">
+    <div class="title-block"><div><span class="reveal title-block__sheet">PRANCHA 05 / 06</span><h2 class="reveal">Obras executadas</h2></div><div class="reveal title-block__meta">8 PROJETOS<br>COMO CONSTRUÍDO</div></div>
+    <div class="projects" id="projects"></div>
+    <a class="reveal more-link" href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener">→ Ver todos os repositórios no GitHub</a>
   </section>
 
-  <section id="agencias" class="section container">
-    <p class="reveal eyebrow">Para agências</p>
-    <h2 class="reveal section__title">Parceiro de execução para agências de Landing Page</h2>
-    <p class="reveal agencies__lead">
-      Sua agência fecha o cliente, eu entro como parceiro técnico: construo a landing page a partir
-      do seu design, com a identidade da sua agência — sem minha marca aparecer pro cliente final.
-    </p>
-    <div class="services">
-      <article class="reveal service-card">
-        <h3>Entrega rápida e white-label</h3>
-        <p>Recebo o design pronto (Figma, print ou referência) e entrego a LP funcional em poucos dias, 100% com a marca da sua agência.</p>
-      </article>
-      <article class="reveal service-card">
-        <h3>Preço por volume</h3>
-        <p>Condições especiais pra agências que fecham várias landing pages por mês — não cobro como projeto avulso.</p>
-      </article>
-      <article class="reveal service-card">
-        <h3>Revisões e suporte contínuo</h3>
-        <p>Ajustes rápidos após a entrega e suporte de manutenção, pra sua agência não precisar depender de mais ninguém.</p>
-      </article>
+  <section id="agencias" class="container">
+    <div class="title-block"><div><span class="reveal title-block__sheet">PRANCHA 06 / 06</span><h2 class="reveal">Para agências de LP</h2></div></div>
+    <p class="reveal lead">Sua agência fecha o cliente, eu entro como parceiro técnico: construo a landing page a partir do seu design, com a identidade da sua agência — sem minha marca aparecer pro cliente final.</p>
+    <div class="fig-grid">
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. A</span><h3>Entrega white-label</h3><p>Recebo o design pronto (Figma, print) e entrego a LP funcional em poucos dias.</p></div>
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. B</span><h3>Preço por volume</h3><p>Condição especial pra quem fecha várias LPs por mês.</p></div>
+      <div class="reveal fig-card"><span class="fig-card__num">FIG. C</span><h3>Suporte contínuo</h3><p>Ajustes rápidos e manutenção pós-entrega.</p></div>
     </div>
-    <p class="reveal agencies__cta">
-      <a href="https://wa.me/5583981759803?text=Olá! Sou de uma agência e quero saber mais sobre parceria para landing pages." target="_blank" rel="noopener" class="btn btn--primary">Falar sobre parceria</a>
-    </p>
+    <a href="https://wa.me/5583981759803?text=Olá! Sou de uma agência e quero saber mais sobre parceria para landing pages." target="_blank" rel="noopener" class="reveal btn btn--fill" style="margin-top:30px;">Falar sobre parceria →</a>
   </section>
 
-  <section id="contato" class="section container">
-    <div class="contact reveal">
-      <p class="eyebrow">Contato</p>
-      <h2 class="section__title">Vamos tirar seu projeto do papel?</h2>
-      <p class="contact__lead">Orçamento sob consulta, sempre alinhado ao tamanho e necessidade do seu negócio.</p>
-      <div class="contact__grid">
-        <a class="contact-card" href="https://wa.me/5583981759803" target="_blank" rel="noopener">
-          <span class="contact-card__label">WhatsApp</span>
-          <span class="contact-card__value">+55 83 98175-9803</span>
-        </a>
-        <a class="contact-card" href="mailto:muriloomendesedts@gmail.com">
-          <span class="contact-card__label">E-mail</span>
-          <span class="contact-card__value">muriloomendesedts@gmail.com</span>
-        </a>
-        <a class="contact-card" href="https://www.linkedin.com/in/murilo-mendes-dev-frontend" target="_blank" rel="noopener">
-          <span class="contact-card__label">LinkedIn</span>
-          <span class="contact-card__value">murilo-mendes-dev-frontend</span>
-        </a>
-        <a class="contact-card" href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener">
-          <span class="contact-card__label">GitHub</span>
-          <span class="contact-card__value">muriloomendesedts-dev</span>
-        </a>
-      </div>
+  <section id="contato" class="container">
+    <div class="title-block"><div><span class="reveal title-block__sheet">ANEXO — CONTATO</span><h2 class="reveal">Vamos tirar seu projeto do papel?</h2></div></div>
+    <div class="contact-grid">
+      <a class="reveal contact-item" href="https://wa.me/5583981759803" target="_blank" rel="noopener"><span class="k">WhatsApp</span><span class="v">+55 83 98175-9803</span></a>
+      <a class="reveal contact-item" href="mailto:muriloomendesedts@gmail.com"><span class="k">E-mail</span><span class="v">muriloomendesedts@gmail.com</span></a>
+      <a class="reveal contact-item" href="https://www.linkedin.com/in/murilo-mendes-dev-frontend" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">murilo-mendes-dev-frontend</span></a>
+      <a class="reveal contact-item" href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">muriloomendesedts-dev</span></a>
     </div>
   </section>
 
 </main>
 
-<footer class="footer">
-  <div class="container footer__inner">
-    <span>© <span id="year"></span> Murilo Mendes de Oliveira</span>
-    <span>Desenvolvido com foco em resultado para pequenas empresas</span>
+<footer class="container">
+  <div class="footer__inner">
+    <span>© <span id="year"></span> MURILO MENDES DE OLIVEIRA</span>
+    <span>DESENVOLVIDO COM FOCO EM RESULTADO PARA PEQUENAS EMPRESAS</span>
   </div>
 </footer>
 
