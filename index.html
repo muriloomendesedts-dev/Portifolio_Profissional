@@ -7,144 +7,213 @@
 <meta name="description" content="Murilo Mendes de Oliveira — Desenvolvedor Full Stack focado em automações e sistemas web para e-commerce, clínicas, indústria, restaurantes, salões e escritórios de advocacia.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
+<a class="skip-link" href="#projetos">Pular para os projetos</a>
+
 <header class="nav" id="nav">
-  <div class="container nav__inner">
-    <a href="#top" class="nav__brand">Murilo<span>.dev</span></a>
-    <nav class="nav__links" id="navLinks">
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#stack">Stack</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#agencias">Agências</a>
-      <a href="#contato">Contato</a>
+  <div class="nav__inner container">
+    <a href="#top" class="nav__brand" aria-label="Murilo Mendes, início">murilo<span>mendes.</span></a>
+    <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+      <a href="#projetos">Trabalhos <sup>08</sup></a>
+      <a href="#sobre">Quem sou</a>
+      <a href="#servicos">O que faço</a>
+      <a href="#agencias">Para agências</a>
+      <a href="#contato" class="nav__contact">Vamos conversar <span aria-hidden="true">↗</span></a>
     </nav>
-    <a href="#contato" class="nav__cta">Orçamento</a>
-    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="nav__toggle" id="navToggle" aria-controls="navLinks" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
   </div>
 </header>
 
 <main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Murilo Mendes / Desenvolvimento independente</p>
+        <h1 id="hero-title">Ideia sua.<br>Código <em>meu.</em></h1>
+        <p class="hero__subtitle">Seu negócio tem personalidade.<br>Seu site também pode ter.</p>
+        <a href="#projetos" class="button button--lime">Explorar meus trabalhos <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero__showcase" aria-label="Alguns dos meus trabalhos">
+        <a class="showcase showcase--back" href="https://muriloomendesedts-dev.github.io/devcafe/" target="_blank" rel="noopener">
+          <span class="showcase__bar">01 / DevCafé <span aria-hidden="true">↗</span></span>
+          <img src="images/devcafe.png" alt="Visitar DevCafé, site de cafeteria" width="1280" height="800" fetchpriority="high">
+        </a>
+        <a class="showcase showcase--front" href="https://muriloomendesedts-dev.github.io/projeto-refrigerantes/" target="_blank" rel="noopener">
+          <span class="showcase__bar">02 / Distribuidora de Refrigerantes <span aria-hidden="true">↗</span></span>
+          <img src="images/projeto-refrigerantes.png" alt="Visitar o projeto da distribuidora de refrigerantes" width="1280" height="800">
+        </a>
+        <span class="hero__note">Do layout<br>à última linha.</span>
+      </div>
+      <div class="hero__footer">
+        <div class="hero__person"><img src="https://avatars.githubusercontent.com/u/253207551?v=4" alt="Murilo Mendes" width="48" height="48"><p>Prazer, Murilo.<br><strong>Eu cuido do código.</strong></p></div>
+        <p>Sites, sistemas e automações.<br>Do primeiro papo à publicação.</p>
+        <a href="#contato" class="text-link">Fale direto comigo <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+  <div class="discipline-strip" aria-hidden="true"><span>Desenvolvimento web</span><b>✳</b><span>Automação</span><b>✳</b><span>Feito para o seu negócio</span><b>✳</b></div>
 
-  <section class="hero container">
-    <div class="hero__grid">
-      <div>
-        <span class="reveal hero__eyebrow">PRANCHA 01 / 06 — APRESENTAÇÃO</span>
-        <h1 class="reveal">Sistema web <em>sob medida</em> pra sua empresa vender mais</h1>
-        <p class="reveal">Construo landing pages, sistemas de agendamento e automações com n8n para pequenos negócios — do briefing à entrega, como um projeto técnico bem especificado.</p>
-        <div class="reveal hero__actions">
-          <a href="https://wa.me/5583981759803" target="_blank" rel="noopener" class="btn btn--fill">Solicitar orçamento →</a>
-          <a href="#projetos" class="btn btn--line">Ver projetos executados</a>
+  <section id="projetos" class="section container">
+    <div class="section-heading"><div><p class="eyebrow">01 / Trabalhos selecionados</p><h2 class="section__title">Menos promessa.<br><em>Mais projeto.</em></h2></div><p>De uma cafeteria ao seu próximo negócio.<br>Explore os sites que já saíram do papel.</p></div>
+    <div class="projects" id="projects">
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/projeto-refrigerantes/" target="_blank" rel="noopener" aria-label="Visitar o site Distribuidora de Refrigerantes">
+          <img src="images/projeto-refrigerantes.png" alt="Captura de tela do site Distribuidora de Refrigerantes" loading="lazy" width="1280" height="800" style="object-position:top center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>Distribuidora de Refrigerantes</h3><span class="tag"><span class="project-card__number">01</span>Indústria</span></div>
+          <p>Catálogo de produtos e sistema web para gestão de pedidos de uma distribuidora de bebidas.</p>
+          <div class="project-card__footer"><span>CSS / JS</span><a href="https://github.com/muriloomendesedts-dev/projeto-refrigerantes" target="_blank" rel="noopener" aria-label="Ver código de Distribuidora de Refrigerantes no GitHub">Código no GitHub ↗</a></div>
         </div>
-        <div class="reveal tags">
-          <span>E-commerce</span><span>Clínicas</span><span>Indústria</span><span>Restaurantes</span><span>Salões</span><span>Advocacia</span>
+      </article>
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/devcafe/" target="_blank" rel="noopener" aria-label="Visitar o site DevCafé">
+          <img src="images/devcafe.png" alt="Captura de tela do site DevCafé" loading="lazy" width="1280" height="800" style="object-position:top center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>DevCafé</h3><span class="tag"><span class="project-card__number">02</span>Pequenos negócios</span></div>
+          <p>Site institucional e cardápio digital para uma cafeteria, com navegação responsiva.</p>
+          <div class="project-card__footer"><span>CSS / JS</span><a href="https://github.com/muriloomendesedts-dev/devcafe" target="_blank" rel="noopener" aria-label="Ver código de DevCafé no GitHub">Código no GitHub ↗</a></div>
         </div>
-      </div>
-      <div class="reveal spec">
-        <div class="hero__avatar-wrap">
-          <img class="hero__avatar" src="https://avatars.githubusercontent.com/u/253207551?v=4" alt="Murilo Mendes de Oliveira">
-          <div>
-            <div class="hero__avatar-name">Murilo Mendes de Oliveira</div>
-            <div class="hero__avatar-role">Responsável técnico</div>
-          </div>
+      </article>
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/salao-portifolio/" target="_blank" rel="noopener" aria-label="Visitar o site Salão de Beleza">
+          <img src="images/salao-portifolio.png" alt="Captura de tela do site Salão de Beleza" loading="lazy" width="1280" height="800" style="object-position:top center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>Salão de Beleza</h3><span class="tag"><span class="project-card__number">03</span>Clínicas &amp; Estética</span></div>
+          <p>Site institucional para salão de beleza com apresentação de serviços e contato direto.</p>
+          <div class="project-card__footer"><span>CSS / JS</span><a href="https://github.com/muriloomendesedts-dev/salao-portifolio" target="_blank" rel="noopener" aria-label="Ver código de Salão de Beleza no GitHub">Código no GitHub ↗</a></div>
         </div>
-        <div class="spec__head">Ficha técnica do serviço</div>
-        <dl class="spec__rows">
-          <div class="spec__row"><dt>Escopo</dt><dd>LP + automação</dd></div>
-          <div class="spec__row"><dt>Automação</dt><dd>n8n</dd></div>
-          <div class="spec__row"><dt>Entrega média</dt><dd>3–7 dias</dd></div>
-          <div class="spec__row"><dt>Revisões</dt><dd>Inclusas</dd></div>
-          <div class="spec__row"><dt>Orçamento</dt><dd>Sob consulta</dd></div>
-        </dl>
+      </article>
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/Projeto-2-tradutor/" target="_blank" rel="noopener" aria-label="Visitar o site Tradutor Web">
+          <img src="images/projeto-2-tradutor.png" alt="Captura de tela do site Tradutor Web" loading="lazy" width="1280" height="800" style="object-position:center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>Tradutor Web</h3><span class="tag"><span class="project-card__number">04</span>Ferramenta</span></div>
+          <p>Aplicação web para tradução de textos, com integração de API e interface simples.</p>
+          <div class="project-card__footer"><span>JavaScript</span><a href="https://github.com/muriloomendesedts-dev/Projeto-2-tradutor" target="_blank" rel="noopener" aria-label="Ver código de Tradutor Web no GitHub">Código no GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/academia/" target="_blank" rel="noopener" aria-label="Visitar o site Elite Fitness">
+          <img src="images/academia.png" alt="Captura de tela do site Elite Fitness" loading="lazy" width="1280" height="800" style="object-position:top center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>Elite Fitness</h3><span class="tag"><span class="project-card__number">05</span>Academia &amp; Fitness</span></div>
+          <p>Site institucional para academia, com planos, modalidades e agendamento de aula experimental.</p>
+          <div class="project-card__footer"><span>HTML / CSS / JS</span><a href="https://github.com/muriloomendesedts-dev/academia" target="_blank" rel="noopener" aria-label="Ver código de Elite Fitness no GitHub">Código no GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/advocacia/" target="_blank" rel="noopener" aria-label="Visitar o site Oliveira &amp; Associados">
+          <img src="images/advocacia.png" alt="Captura de tela do site Oliveira &amp; Associados" loading="lazy" width="1280" height="800" style="object-position:top center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>Oliveira &amp; Associados</h3><span class="tag"><span class="project-card__number">06</span>Advocacia</span></div>
+          <p>Site institucional para escritório de advocacia, com áreas de atuação e captação de consultas.</p>
+          <div class="project-card__footer"><span>HTML / CSS / JS</span><a href="https://github.com/muriloomendesedts-dev/advocacia" target="_blank" rel="noopener" aria-label="Ver código de Oliveira &amp; Associados no GitHub">Código no GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/clinica-medica/" target="_blank" rel="noopener" aria-label="Visitar o site Dra. Camila Nutri">
+          <img src="images/clinica-medica.png" alt="Captura de tela do site Dra. Camila Nutri" loading="lazy" width="1280" height="800" style="object-position:top center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>Dra. Camila Nutri</h3><span class="tag"><span class="project-card__number">07</span>Clínicas &amp; Nutrição</span></div>
+          <p>Site para consultório de nutrição, com apresentação de resultados e agendamento de consulta.</p>
+          <div class="project-card__footer"><span>HTML / CSS / JS</span><a href="https://github.com/muriloomendesedts-dev/clinica-medica" target="_blank" rel="noopener" aria-label="Ver código de Dra. Camila Nutri no GitHub">Código no GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="project-card">
+        <a class="project-card__image" href="https://muriloomendesedts-dev.github.io/infoprodutor/" target="_blank" rel="noopener" aria-label="Visitar o site Lucas Ferreira - Mentor Digital">
+          <img src="images/infoprodutor.png" alt="Captura de tela do site Lucas Ferreira - Mentor Digital" loading="lazy" width="1280" height="800" style="object-position:top center">
+          <span class="project-card__badge" aria-hidden="true">Explorar projeto ↗</span>
+        </a>
+        <div class="project-card__body">
+          <div class="project-card__top"><h3>Lucas Ferreira - Mentor Digital</h3><span class="tag"><span class="project-card__number">08</span>Infoprodutos</span></div>
+          <p>Página de vendas para infoprodutor, com prova social, serviços e captação de leads.</p>
+          <div class="project-card__footer"><span>HTML / CSS / JS</span><a href="https://github.com/muriloomendesedts-dev/infoprodutor" target="_blank" rel="noopener" aria-label="Ver código de Lucas Ferreira - Mentor Digital no GitHub">Código no GitHub ↗</a></div>
+        </div>
+      </article>
+    </div>
+    <p class="projects__more">
+      <a href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener">Ver todos os repositórios no GitHub →</a>
+    </p>
+  </section>
+
+  <section id="sobre" class="about-section">
+    <div class="container about">
+      <div class="about__identity"><p class="eyebrow">02 / Quem está por trás</p><div class="about__portrait"><img src="https://avatars.githubusercontent.com/u/253207551?v=4" alt="Retrato de Murilo Mendes de Oliveira" width="280" height="320" loading="lazy"><span>Prazer, Murilo.</span></div><a class="text-link" href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener">Um pouco mais do meu código ↗</a></div>
+      <div class="about__story"><h2 class="section__title">Tem uma pessoa<br>do outro lado<br><em>do código.</em></h2><p>Sou Murilo Mendes de Oliveira, desenvolvedor Full Stack. Crio sites, sistemas e automações para pequenos negócios — e gosto de entender como as coisas funcionam antes de começar a programar.</p><p>Você fala comigo, eu desenvolvo. Da interface ao banco de dados, cada parte é pensada para o que você precisa fazer no dia a dia.</p><div class="about__signoff"><span>Murilo Mendes</span><small>Desenvolvedor independente</small></div></div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section container services-section">
+    <div class="services-intro"><p class="eyebrow">03 / O que faço</p><h2 class="section__title">Cada negócio,<br>um <em>jeito.</em></h2><p>O ponto de partida é a sua rotina. A solução pode ser um site, um sistema ou uma tarefa a menos na sua lista.</p><a class="text-link" href="#contato">Me conte o que precisa ↗</a></div>
+    <div class="services-list">
+      <details class="service" open><summary><span class="service__number">01</span><h3>Lojas &amp; e-commerce</h3><span class="service__toggle" aria-hidden="true"></span></summary><p>Catálogo de produtos, pagamentos integrados e automação de pedidos e estoque. Uma loja construída para a maneira como você vende.</p></details>
+      <details class="service"><summary><span class="service__number">02</span><h3>Clínicas &amp; consultórios</h3><span class="service__toggle" aria-hidden="true"></span></summary><p>Agendamento online, lembretes de consulta e organização do atendimento. Menos troca de mensagens para encontrar um horário.</p></details>
+      <details class="service"><summary><span class="service__number">03</span><h3>Indústria &amp; operações</h3><span class="service__toggle" aria-hidden="true"></span></summary><p>Painéis de produção e estoque, integração entre sistemas e automação dos processos internos que ainda dependem de trabalho manual.</p></details>
+      <details class="service"><summary><span class="service__number">04</span><h3>Restaurantes &amp; cafés</h3><span class="service__toggle" aria-hidden="true"></span></summary><p>Cardápio digital, pedidos online e integração com delivery para facilitar o atendimento dentro e fora do salão.</p></details>
+      <details class="service"><summary><span class="service__number">05</span><h3>Salões &amp; estética</h3><span class="service__toggle" aria-hidden="true"></span></summary><p>Agenda online, ficha de cliente e lembretes automáticos para organizar horários e ajudar a reduzir faltas.</p></details>
+      <details class="service"><summary><span class="service__number">06</span><h3>Advocacia &amp; serviços</h3><span class="service__toggle" aria-hidden="true"></span></summary><p>Sites para apresentar sua atuação, captação de contatos e sistemas para organizar clientes, processos e tarefas do escritório.</p></details>
+    </div>
+  </section>
+  <section id="stack" class="stack-section"><div class="container stack"><h2>Minhas ferramentas<span>O que uso para construir.</span></h2><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>n8n</span></div></section>
+
+  <section id="agencias" class="section container agencies">
+    <div class="agencies__heading"><p class="eyebrow">04 / Para agências</p><h2 class="section__title">Seu design.<br>Sua marca.<br><em>Meu código.</em></h2><a href="https://wa.me/5583981759803?text=Ol%C3%A1!%20Sou%20de%20uma%20ag%C3%AAncia%20e%20quero%20conversar%20sobre%20landing%20pages." target="_blank" rel="noopener" class="button button--dark">Falar sobre parceria <span aria-hidden="true">↗</span></a></div>
+    <div class="agencies__content"><p class="agencies__lead">Sua agência cuida da criação. Eu transformo o layout em uma landing page funcional, com a identidade de vocês.</p><div class="agency-item"><span>01</span><div><h3>Nos bastidores da sua agência</h3><p>Recebo o Figma, print ou referência e desenvolvo a página. A entrega leva a sua marca.</p></div></div><div class="agency-item"><span>02</span><div><h3>Uma parceria que acompanha o volume</h3><p>Condições especiais para agências que precisam de várias landing pages por mês.</p></div></div><div class="agency-item"><span>03</span><div><h3>Depois da entrega, pode chamar</h3><p>Revisões, ajustes e manutenção para manter os projetos funcionando.</p></div></div></div>
+  </section>
+
+  <section id="contato" class="contact-section"><div class="container">
+    <div class="contact">
+      <p class="eyebrow">05 / Próximo projeto</p>
+      <div class="contact__heading"><h2>Vamos fazer<br><em>acontecer?</em></h2><a class="contact__action" href="https://wa.me/5583981759803" target="_blank" rel="noopener" aria-label="Conversar com Murilo no WhatsApp"><span aria-hidden="true">↗</span></a></div>
+      <p class="contact__lead">Me conte a ideia. A gente conversa sobre o caminho, o prazo e o orçamento.</p>
+      <div class="contact__grid">
+        <a class="contact-card" href="https://wa.me/5583981759803" target="_blank" rel="noopener">
+          <span class="contact-card__label">WhatsApp</span>
+          <span class="contact-card__value">+55 83 98175-9803</span>
+        </a>
+        <a class="contact-card" href="mailto:muriloomendesedts@gmail.com">
+          <span class="contact-card__label">E-mail</span>
+          <span class="contact-card__value">muriloomendesedts@gmail.com</span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/murilo-mendes-dev-frontend" target="_blank" rel="noopener">
+          <span class="contact-card__label">LinkedIn</span>
+          <span class="contact-card__value">murilo-mendes-dev-frontend</span>
+        </a>
+        <a class="contact-card" href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener">
+          <span class="contact-card__label">GitHub</span>
+          <span class="contact-card__value">muriloomendesedts-dev</span>
+        </a>
       </div>
-    </div>
-  </section>
-
-  <section id="sobre" class="container">
-    <div class="title-block">
-      <div>
-        <span class="reveal title-block__sheet">PRANCHA 02 / 06</span>
-        <h2 class="reveal">Sobre o processo</h2>
-      </div>
-      <div class="reveal title-block__meta">DESENHISTA: M. MENDES<br>ESCALA: 1:1</div>
-    </div>
-    <div class="about">
-      <p class="reveal">Trabalho com desenvolvimento web focado em resultado: sites, sistemas e automações que resolvem problemas reais de pequenas empresas — do controle de pedidos ao agendamento de clientes, com integração de processos internos. Cada projeto é levantado, especificado e construído sob medida.</p>
-      <div class="about__specs">
-        <div class="reveal about__spec"><span class="num">01</span><div><strong>Full Stack</strong><span>Front-end, back-end e banco de dados na mesma mão</span></div></div>
-        <div class="reveal about__spec"><span class="num">02</span><div><strong>Automação</strong><span>Menos trabalho manual, menos erro, mais tempo livre</span></div></div>
-        <div class="reveal about__spec"><span class="num">03</span><div><strong>Sob medida</strong><span>Sistemas pensados para o seu tipo de negócio</span></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="servicos" class="container">
-    <div class="title-block">
-      <div><span class="reveal title-block__sheet">PRANCHA 03 / 06</span><h2 class="reveal">Especificação por segmento</h2></div>
-      <div class="reveal title-block__meta">6 FIGURAS<br>REV. 03</div>
-    </div>
-    <div class="fig-grid">
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. 01 — E-COMMERCE</span><h3>Lojas virtuais</h3><p>Catálogo, pagamento e automação de pedidos e estoque.</p></div>
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. 02 — CLÍNICAS</span><h3>Agendamento</h3><p>Marcação online, lembretes automáticos e organização de atendimento.</p></div>
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. 03 — INDÚSTRIA</span><h3>Controle interno</h3><p>Painéis de produção e estoque, integração entre sistemas.</p></div>
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. 04 — RESTAURANTES</span><h3>Cardápio digital</h3><p>Pedidos online e integração com delivery.</p></div>
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. 05 — SALÕES</span><h3>Agenda &amp; ficha</h3><p>Ficha de cliente e lembretes para reduzir faltas.</p></div>
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. 06 — ADVOCACIA</span><h3>Captação</h3><p>Gestão de processos, clientes e automação de tarefas.</p></div>
-    </div>
-  </section>
-
-  <section id="stack" class="container">
-    <div class="title-block"><div><span class="reveal title-block__sheet">PRANCHA 04 / 06</span><h2 class="reveal">Legenda de materiais</h2></div></div>
-    <div class="reveal legend">
-      <div class="legend__item"><span class="legend__swatch" style="background:#e34f26"></span><span>HTML5</span></div>
-      <div class="legend__item"><span class="legend__swatch" style="background:#264de4"></span><span>CSS3</span></div>
-      <div class="legend__item"><span class="legend__swatch" style="background:#f7df1e"></span><span>JavaScript</span></div>
-      <div class="legend__item"><span class="legend__swatch" style="background:#ea4b71"></span><span>n8n</span></div>
-    </div>
-  </section>
-
-  <section id="projetos" class="container">
-    <div class="title-block"><div><span class="reveal title-block__sheet">PRANCHA 05 / 06</span><h2 class="reveal">Obras executadas</h2></div><div class="reveal title-block__meta">8 PROJETOS<br>COMO CONSTRUÍDO</div></div>
-    <div class="projects" id="projects"></div>
-    <a class="reveal more-link" href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener">→ Ver todos os repositórios no GitHub</a>
-  </section>
-
-  <section id="agencias" class="container">
-    <div class="title-block"><div><span class="reveal title-block__sheet">PRANCHA 06 / 06</span><h2 class="reveal">Para agências de LP</h2></div></div>
-    <p class="reveal lead">Sua agência fecha o cliente, eu entro como parceiro técnico: construo a landing page a partir do seu design, com a identidade da sua agência — sem minha marca aparecer pro cliente final.</p>
-    <div class="fig-grid">
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. A</span><h3>Entrega white-label</h3><p>Recebo o design pronto (Figma, print) e entrego a LP funcional em poucos dias.</p></div>
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. B</span><h3>Preço por volume</h3><p>Condição especial pra quem fecha várias LPs por mês.</p></div>
-      <div class="reveal fig-card"><span class="fig-card__num">FIG. C</span><h3>Suporte contínuo</h3><p>Ajustes rápidos e manutenção pós-entrega.</p></div>
-    </div>
-    <a href="https://wa.me/5583981759803?text=Olá! Sou de uma agência e quero saber mais sobre parceria para landing pages." target="_blank" rel="noopener" class="reveal btn btn--fill" style="margin-top:30px;">Falar sobre parceria →</a>
-  </section>
-
-  <section id="contato" class="container">
-    <div class="title-block"><div><span class="reveal title-block__sheet">ANEXO — CONTATO</span><h2 class="reveal">Vamos tirar seu projeto do papel?</h2></div></div>
-    <div class="contact-grid">
-      <a class="reveal contact-item" href="https://wa.me/5583981759803" target="_blank" rel="noopener"><span class="k">WhatsApp</span><span class="v">+55 83 98175-9803</span></a>
-      <a class="reveal contact-item" href="mailto:muriloomendesedts@gmail.com"><span class="k">E-mail</span><span class="v">muriloomendesedts@gmail.com</span></a>
-      <a class="reveal contact-item" href="https://www.linkedin.com/in/murilo-mendes-dev-frontend" target="_blank" rel="noopener"><span class="k">LinkedIn</span><span class="v">murilo-mendes-dev-frontend</span></a>
-      <a class="reveal contact-item" href="https://github.com/muriloomendesedts-dev" target="_blank" rel="noopener"><span class="k">GitHub</span><span class="v">muriloomendesedts-dev</span></a>
-    </div>
+    </div></div>
   </section>
 
 </main>
 
-<footer class="container">
-  <div class="footer__inner">
-    <span>© <span id="year"></span> MURILO MENDES DE OLIVEIRA</span>
-    <span>DESENVOLVIDO COM FOCO EM RESULTADO PARA PEQUENAS EMPRESAS</span>
+<footer class="footer">
+  <div class="container footer__inner">
+    <span>© <span id="year"></span> Murilo Mendes de Oliveira</span>
+    <span>Feito por Murilo. Do início ao fim.</span>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=3" defer></script>
 </body>
 </html>
